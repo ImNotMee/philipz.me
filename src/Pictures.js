@@ -25,12 +25,12 @@ class Pictures extends Component {
     const a = this.state.pictures;
     const b = this.state.followers;
     return (
-      <div id="right">
-        <p>Current Followers: {b}</p>
-        {a.map(d =><p>
-          <img id="pics" src={d.display_url}></img>
-          <br></br>
-          {d.text}</p>)}
+      <div>
+        {a.map(d =>
+          <div id="right">
+            <img id="pics" src={d.display_url}></img>
+            <p id="t"><span id="ka">Caption:</span> {d.text}</p>
+        </div>)}
       </div>
     )}
 }
