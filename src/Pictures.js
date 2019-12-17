@@ -23,7 +23,8 @@ class Pictures extends Component {
     //}
     return (
       <div id="right">
-        {a.map(d => <img id="pics" src={d.display_url}></img>)}
+        //{a.map(d => <img id="pics" src={d.display_url}></img>)}
+        {a.map(b=> <p>{b.likes}</p>)}
       </div>
     )}
 }
