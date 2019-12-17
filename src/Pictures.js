@@ -1,30 +1,36 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import * as a from "./scraper.js";
+import * as a from "./backend/scraper.js";
 
 class Pictures extends Component {
   constructor() {
     super();
-    this.state = { pictures: [] };
+    this.state = { pictures: [], followers: "" };
   }
 
   componentDidMount() {
     a.test().then(res => {
       this.setState({
-          pictures:  res
+          pictures: res
         })
+    });
+    a.followers().then(res =>{
+      this.setState({
+        followers: res
+      })
     });
   }
 
   render() {
     const a = this.state.pictures;
-    //for (var i = 0; i < this.state.pictures.length; i++) {
-    //  console.log(a[i].display_url);
-    //}
+    const b = this.state.followers;
     return (
       <div id="right">
-        //{a.map(d => <img id="pics" src={d.display_url}></img>)}
-        {a.map(b=> <p>{b.likes}</p>)}
+        <p>Current Followers: {b}</p>
+        {a.map(d =><p>
+          <img id="pics" src={d.display_url}></img>
+          <br></br>
+          {d.text}</p>)}
       </div>
     )}
 }
