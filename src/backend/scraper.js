@@ -43,7 +43,7 @@ function cleanText(text) {
   return t;
 }
 
-export function test() {
+export function pictures() {
   return getPictures();
 }
 

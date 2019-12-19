@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Pictures from './Pictures';
+import Followers from './Follower';
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
             <a href="https://www.linkedin.com/in/philip-zhang-3b7246127"><img id="icons" src="icons/linkedin.png" alt="" /></a>
             <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
         </div>
-
+        <Followers />
         <div id="copyright">
-            <p align="center" id="bio">I am a student who has a hobby of taking interesting pictures.</p>
-            <p align="center">Philip @ 2019</p>
+            <p align="center" id="bio">A UofT student</p>
+            <p align="center"><span id="colour">Philip</span> @ 2019</p>
         </div>
     </div>
     <Pictures />
