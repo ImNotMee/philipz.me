@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as a from "./backend/scraper.js";
 const NUM_PAGE = 10;
 
@@ -44,7 +43,7 @@ class Pictures extends Component {
   render() {
     const a = this.state.pictures.slice(this.state.prev,this.state.count);
     return (
-      <div id="right">
+      <div className="right">
         {a.map(d =>
           <div>
             <img id="pics" src={d.display_url}></img>

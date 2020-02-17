@@ -9,11 +9,7 @@ class Follower extends Component {
   }
 
   componentDidMount() {
-    a.followers().then(res =>{
-      this.setState({
-        followers: res
-      })
-    });
+
   }
 
   render() {

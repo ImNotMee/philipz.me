@@ -38,7 +38,7 @@
     width: 25%;
 }
 
-#right {
+.right {
     float: right;
     margin-right: 10%;
     width: 55%;
