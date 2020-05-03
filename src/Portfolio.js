@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Pictures from './Pictures';
-import Followers from './Follower';
+import './Portfolio.css';
+import Pictures from './components/Pictures.js';
+import Followers from './components/Follower.js';
 
 class Portfolio extends Component {
   constructor() {
@@ -11,7 +11,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="Portfolio">
       <div class="top"></div>
       <div class="left">
           <div id="logo">

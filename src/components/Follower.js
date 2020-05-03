@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import * as a from "./backend/scraper.js";
+import * as a from "../backend/scraper.js";
 
 class Follower extends Component {
   constructor() {
