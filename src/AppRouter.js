@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Portfolio from './Portfolio.js';
-import Project from './Project.js';
+import Projects from './Projects.js';
 import Main from './Main.js';
 import Loading from './Loading.js';
 
@@ -12,7 +12,7 @@ function AppRouter() {
         <Route path="/" exact component={Loading}/>
         <Route path="/index" exact component={Main}/>
         <Route path="/Photography" exact component={Portfolio}/>
-        <Route path="/Projects" exact component={Project}/>
+        <Route path="/Projects" exact component={Projects}/>
       </Switch>
     </Router>
   );

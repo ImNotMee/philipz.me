@@ -50,11 +50,6 @@ p {
 }
 
 #box2 {
-  flex: 2;
-  padding-left: 5%;
-}
-
-#box3 {
-  flex: 3;
+  flex: 1;
   padding-left: 5%;
 }

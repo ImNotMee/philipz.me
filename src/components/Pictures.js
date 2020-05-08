@@ -49,8 +49,8 @@ class Pictures extends Component {
             <img id="pics" src={d.display_url}></img>
             <p id="tee"><span id="colour"></span> {d.text}</p>
         </div>)}
-        <button id="m" onClick={this.decrease.bind(this)}>Prev</button>
-        <button id="m" onClick={this.increase.bind(this)}>Next</button>
+        <button className="button-style" onClick={this.decrease.bind(this)}>Prev</button>
+        <button className="button-style" onClick={this.increase.bind(this)}>Next</button>
       </div>
     )}
 }

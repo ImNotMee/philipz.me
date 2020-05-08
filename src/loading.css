@@ -1,11 +1,15 @@
 .loading {
+   margin-bottom: 0;
+}
+
+.container {
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .center {
-  margin-top: 10%;
   flex-basis: 0px;
   flex-grow: 1;
 }
@@ -32,44 +36,4 @@
 
 .la {
  flex: 1;
-}
-
-.lb {
-  flex: 2;
-}
-
-.lc {
-  flex: 3;
-}
-
-.button-style {
-  border-radius: 12px;
-  padding: 1vh 3vh;
-  color: #ffffff;
-  background-color: #388cd6;
-}
-
-.button-style span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-style span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -1vh;
-  transition: 0.5s;
-}
-
-.button-style:hover span {
-  padding-right: 2vh;
-}
-
-.button-style:hover span:after {
-  opacity: 1;
-  right: 0;
 }

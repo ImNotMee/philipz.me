@@ -61,7 +61,7 @@ class Main extends Component {
                        </ul>
                      </div>
 
-                    <div id="box3">
+                    <div id="box2">
                        <h3>Other Stacks:</h3>
                        <ul id="lst">
                          <li>Git/SVN</li>
