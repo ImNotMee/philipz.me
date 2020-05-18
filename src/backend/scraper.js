@@ -7,7 +7,7 @@ async function getHTML(url) {
 }
 
 async function getPictures() {
-    var pictures = [];
+    let pictures = [];
     // Gets the full html
     const html = await getHTML("https://www.instagram.com/_philzpng_/");
     const $ = cheerio.load(html);
@@ -19,7 +19,7 @@ async function getPictures() {
 
     // Set up the list of jsons per image
     edges.data.forEach(element => {
-        var t = cleanText(element.node.edge_media_to_caption.edges[0].node.text);
+        let t = cleanText(element.node.edge_media_to_caption.edges[0].node.text);
         pictures.push({ timestamp: element.node.taken_at_timestamp, display_url: element.node.display_url, likes: element.node.edge_liked_by.count, text:t });
     });
     return pictures;
@@ -37,7 +37,7 @@ async function getFollowers() {
 
 function cleanText(text) {
   // Striping the ' or ,
-  var t = text.replace(/'/g,"").replace(/,/g,'');
+  let t = text.replace(/'/g,"").replace(/,/g,'');
   // striping the new lines and hashtags
   t = t.replace(/\n/g,"").replace(/\#\w\w+\s?/g, "");
   return t;
