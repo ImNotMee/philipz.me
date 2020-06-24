@@ -25,7 +25,7 @@ class Portfolio extends Component {
           <Followers />
           <div id="copyright">
               <p align="center" id="bio">A UofT student</p>
-              <p align="center"><span id="colour">Philip</span> @ 2019</p>
+              <p align="center"><span id="colour">Philip</span> @ 2020</p>
           </div>
       </div>
       <Pictures />

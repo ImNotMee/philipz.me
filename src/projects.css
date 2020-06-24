@@ -1,7 +1,54 @@
 .projects {
   display: block;
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
+
+}
+.flexcontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  border: solid;
+  margin-bottom: 2%;
+  background: #cccccc;
+  border-radius: 25px;
+}
+
+.picture {
+  flex: 1;
+  max-width: 20%;
   text-align: center;
+}
+
+.text {
+  flex: 1;
+  margin: 2%;
+}
+
+
+#display {
+  width: 100%;
+  height: auto;
+  margin: 5%;
+  border-radius: 25%;
+}
+
+#project-h2 {
+  margin: 2%;
+  color: #2a659c;
+}
+
+#project-p {
+  margin: 2%;
+}
+
+#project-h1 {
+}
+
+#line {
+  color:#000000;
+  background-color: #000000;
+  margin-bottom: 2%;
+  height: 3px;
 }

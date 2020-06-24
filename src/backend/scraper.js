@@ -44,9 +44,9 @@ function cleanText(text) {
 }
 
 export function pictures() {
-  return getPictures();
+ return getPictures();
 }
 
 export function followers() {
-  return getFollowers();
+ return getFollowers();
 }

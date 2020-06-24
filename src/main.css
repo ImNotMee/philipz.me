@@ -30,11 +30,11 @@
   border-radius: 25%;
 }
 
-h3 {
-    color: #2a659c;
+#main-h3 {
+     color: #2a659c;
+    /* red color: #b02121;*/
 }
-
-p {
+#main-p {
   padding-left: 2%;
 }
 

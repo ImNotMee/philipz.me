@@ -8,25 +8,25 @@ class Main extends Component {
     return (
       <div className="body">
              <div className="left">
-              <div id="b1">
-               <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"}></img>
-               </div>
+                <div id="b1">
+                  <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"}></img>
+                </div>
                <div id="b2">
                    <a href="https://www.linkedin.com/in/philip-zhang-3b7246127"><img id="icons" src="icons/linkedin.png" alt="" /></a>
                    <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
-                   <a href="mailto:philip.zhang@mail;.utoronto.ca"><img id="icons" src="icons/email.png" alt=""/></a>
+                   <a href="mailto:philip.zhang@mail.utoronto.ca"><img id="icons" src="icons/email.png" alt=""/></a>
                    <a href="https://www.instagram.com/_philzpng_/"><img id="icons" src="icons/instagram.png" alt="" /></a>
                </div>
              </div>
 
              <div className="right" >
-                     <h3>About me:</h3>
-                     <p>I am a 4th year Computer Science student @ University of Toronto.</p>
-                     <p>Also, seeking for full-time & internships as a <strong>Software Engineer</strong>. Expected to graduate in May 2021.</p>
-                     <h3>Work Experiences:</h3>
-                         <p>DevOps Engineer Intern at Oracle <span style={{color: "#388cd6"}}>[May 2019 - May 2020]</span> </p>
-                         <p>Technical Analyst at Toyota Canada Inc <span style={{color: "#388cd6"}}>[Jan 2018 - Apri 2018]</span> </p>
-                     <h3>Extracurricular Activites:</h3>
+                     <h3 id="main-h3">About me:</h3>
+                     <p id="main-p" id="main-p">I am a 4th year Computer Science student @ University of Toronto.</p>
+                     <p id="main-p">Also, seeking for full-time & internships as a <strong>Software Engineer</strong>. Expected to graduate in May 2021.</p>
+                     <h3 id="main-h3">Work Experiences:</h3>
+                         <p id="main-p">DevOps Engineer Intern at Oracle <span style={{color: "#388cd6"}}>[May 2019 - May 2020]</span> </p>
+                         <p id="main-p">Technical Analyst at Toyota Canada Inc <span style={{color: "#388cd6"}}>[Jan 2018 - Apri 2018]</span> </p>
+                     <h3 id="main-h3">Extracurricular Activites:</h3>
                      <ul id="rightlst">
                          <li>VP of Internal Tech and Relations at DSC@UTSC</li>
                          <li>Former Assistant Director at UTHKSC</li>
@@ -39,7 +39,7 @@ class Main extends Component {
 
                     <div id="t">
                     <div id="box1">
-                         <h3>Languages:</h3>
+                         <h3 id="main-h3">Languages:</h3>
                          <ul id="lst">
                            <li>Java</li>
                            <li>Python</li>
@@ -52,7 +52,7 @@ class Main extends Component {
                        </div>
 
                     <div id="box2">
-                       <h3>Frameworks & Libraries:</h3>
+                        <h3 id="main-h3">Frameworks & Libraries:</h3>
                        <ul id="lst">
                          <li>Node.js</li>
                          <li>React js</li>
@@ -62,7 +62,7 @@ class Main extends Component {
                      </div>
 
                     <div id="box2">
-                       <h3>Other Stacks:</h3>
+                        <h3 id="main-h3">Other Stacks:</h3>
                        <ul id="lst">
                          <li>Git/SVN</li>
                          <li>TeamCity</li>

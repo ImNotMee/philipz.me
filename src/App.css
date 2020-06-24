@@ -1,3 +1,7 @@
+html {
+    background-color: #ffffff;
+}
+
 .button-style {
   border-radius: 12%;
   padding: 1vh 3vh;
@@ -28,4 +32,17 @@
 .button-style:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* Themes */
+#light-red {
+  color: #de3333;
+}
+
+#red {
+  color: #ff2626;
+}
+
+#dark-red {
+  color: #9e1818;
 }

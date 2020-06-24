@@ -1,21 +1,26 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import * as a from "../backend/scraper.js";
-
+let b;
 class Follower extends Component {
   constructor() {
     super();
-    this.state = { followers: "" };
+    this.state = { followerCount : 0};
   }
 
-  componentDidMount() {
 
+  componentDidMount () {
+    a.followers().then(res => {
+      this.setState({
+          followerCount: res
+        })
+    });
   }
 
   render() {
     return (
       <div>
-      <p><span id="colour">Current Followers:</span> {this.state.followers}</p>
+      <p><span id="colour">Current Followers: </span>{this.state.followerCount}</p>
       </div>
     )}
 }
