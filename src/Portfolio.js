@@ -1,13 +1,9 @@
 import React, { Component} from 'react';
-import logo from './logo.svg';
 import './Portfolio.css';
 import Pictures from './components/Pictures.js';
 import Followers from './components/Follower.js';
 
 class Portfolio extends Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (

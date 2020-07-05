@@ -1,16 +1,8 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Languages extends Component {
-  constructor() {
-    super();
-  }
-
-  componentDidMount() {
-
-  }
-
   render(prop) {
     return (
       <div>

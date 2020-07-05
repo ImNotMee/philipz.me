@@ -26,7 +26,7 @@ class Pictures extends Component {
   };
 
   decrease() {
-    if (this.state.prev == 0) {
+    if (this.state.prev === 0) {
       this.setState({
         prev: 0,
         count: NUM_PAGE
@@ -46,7 +46,7 @@ class Pictures extends Component {
       <div className="right">
         {a.map(d =>
           <div>
-            <img id="pics" src={d.display_url}></img>
+            <img id="pics" src={d.display_url} alt=""></img>
             <p id="tee"><span id="colour"></span> {d.text}</p>
         </div>)}
         <button className="button-style" onClick={this.decrease.bind(this)}>Prev</button>

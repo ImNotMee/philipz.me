@@ -3,33 +3,28 @@ import './../projects.css';
 
 class Projectbox extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  githubIcon() {
-    if (this.props.url.length != 0) {
+  githubIcon(url) {
+    if (this.props.url.length !== 0) {
       if (this.props.title.includes("Website")) {
-        return  <a href={this.props.url}><img id="icons" src="icons/link.png" alt="link url" /></a>
+        return <a href={url}><img id="githubIcon" src={process.env.PUBLIC_URL + "icons/link.png"} alt="" /></a>
       }
       else {
-        return  <a href={this.props.url}><img id="icons" src="icons/github.png" alt="github url" /></a>
+        return  <a href={url}><img id="githubIcon" src={process.env.PUBLIC_URL + "icons/github.png"} alt="" /></a>
       }
     }
   }
-
 
   render() {
     const { title, text, pic, url} = this.props;
     return (
       <div className="flexcontainer">
           <div className="picture">
-            <img id="display" src={pic}></img>
+            <img id="display" src={pic} alt=""></img>
           </div>
           <div className="text">
             <h2 id="project-h2">
               {title}
-              {this.githubIcon()}
+              {this.githubIcon(url)}
             </h2>
             <p id="project-p">{text}</p>
           </div>
