@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './main.css';
-import Languages from './components/Languages.js';
+import NavBar from './components/NavBar.js';
 
 class Main extends Component {
   render() {
     return (
-      <div className="body">
-             <div className="left">
-                <div id="b1">
+      <div id="main-body">
+             <div className="left-main">
+                <div>
                   <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"}></img>
                 </div>
-               <div id="b2">
+               <div>
                    <a href="https://www.linkedin.com/in/philip-zhang-3b7246127"><img id="icons" src="icons/linkedin.png" alt="" /></a>
                    <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
                    <a href="mailto:philip.zhang@mail.utoronto.ca"><img id="icons" src="icons/email.png" alt=""/></a>
@@ -19,7 +19,7 @@ class Main extends Component {
                </div>
              </div>
 
-             <div className="right" >
+             <div className="right-main">
                      <h3 id="main-h3">About me:</h3>
                      <p id="main-p" id="main-p">I am a 4th year Computer Science student @ University of Toronto.</p>
                      <p id="main-p">Also, seeking for full-time & internships as a <strong>Software Engineer</strong>. Expected to graduate in May 2021.</p>

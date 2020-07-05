@@ -1,13 +1,8 @@
 import React, { Component} from 'react';
-import logo from './logo.svg';
 import './projects.css';
 import Projectbox from './components/Projectbox.js';
 
 class Projects extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="projects">

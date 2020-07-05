@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as a from "../backend/scraper.js";
-let b;
+
 class Follower extends Component {
   constructor() {
     super();
