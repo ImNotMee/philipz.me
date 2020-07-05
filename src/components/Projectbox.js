@@ -6,10 +6,10 @@ class Projectbox extends Component {
   githubIcon(url) {
     if (this.props.url.length !== 0) {
       if (this.props.title.includes("Website")) {
-        return <a href={url}><img id="githubIcon" src={process.env.PUBLIC_URL + "icons/link.png"} alt="" /></a>
+        return <a href={url}><img id="githubIcon" src="icons/link.png" alt="" /></a>
       }
       else {
-        return  <a href={url}><img id="githubIcon" src={process.env.PUBLIC_URL + "icons/github.png"} alt="" /></a>
+        return  <a href={url}><img id="githubIcon" src="icons/GitHub.png" alt="" /></a>
       }
     }
   }
