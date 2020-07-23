@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import * as a from "../backend/scraper.js";
 const NUM_PAGE = 10;
+const buttonStyle = {
+  margin: 15,
+};
 
 class Pictures extends Component {
   constructor() {
@@ -49,8 +52,8 @@ class Pictures extends Component {
             <img id="pics" src={d.display_url} alt=""></img>
             <p id="tee"><span id="colour"></span> {d.text}</p>
         </div>)}
-        <button className="button-style" onClick={this.decrease.bind(this)}>Prev</button>
-        <button className="button-style" onClick={this.increase.bind(this)}>Next</button>
+        <button className="button-style" style={buttonStyle} onClick={this.decrease.bind(this)}>Prev</button>
+        <button className="button-style" style={buttonStyle} onClick={this.increase.bind(this)}>Next</button>
       </div>
     )}
 }

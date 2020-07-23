@@ -1,11 +1,16 @@
 html {
-    background: #ffffff;
+  height: 100%;
+  background-color: #121212;
+}
+h1, h2, h3 {
+  color: #ffffff;
 }
 
 .button-style {
   border-radius: 12%;
   padding: 1vh 3vh;
   color: #ffffff;
+  border: none;
   background-color: #388cd6;
 }
 

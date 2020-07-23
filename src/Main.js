@@ -52,7 +52,7 @@ class Main extends Component {
                        </div>
 
                     <div id="box2">
-                        <h3 id="main-h3">Frameworks & Libraries:</h3>
+                      <h3 id="main-h3">Frameworks & Libraries:</h3>
                        <ul id="lst">
                          <li>Node.js</li>
                          <li>React js</li>
@@ -65,6 +65,7 @@ class Main extends Component {
                         <h3 id="main-h3">Other Stacks:</h3>
                        <ul id="lst">
                          <li>Git/SVN</li>
+                         <li>MySQL & SQLite</li>
                          <li>TeamCity</li>
                          <li>Chef</li>
                          <li>Docker</li>
