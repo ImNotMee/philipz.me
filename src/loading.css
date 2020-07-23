@@ -1,9 +1,6 @@
-.loading {
-   margin-bottom: 0;
-}
-
 .container {
   margin-top: 20vh;
+  padding-bottom: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,19 +13,19 @@
 
 #icon {
   position: relative;
-    width: 400px;
-    height: 100px;
-    margin: 7% auto 7% auto;
-    font-size: 65px;
-    text-shadow: -1px 2px 2px #000;
-    text-align: center;
-    color: #000000;
+  width: 400px;
+  height: 100px;
+  margin: 7% auto 7% auto;
+  font-size: 65px;
+  text-shadow: -1px 2px 2px #000;
+  text-align: center;
+  color: #ffffff;
 }
 
 #icon-2 {
-  color: #074c8a;
+  color: #388cd6;
 }
-
+/** 074c8a **/
 .links {
   display: flex;
   justify-content: space-evenly;

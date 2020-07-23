@@ -9,7 +9,7 @@ class Projectbox extends Component {
         return <a href={url}><img id="githubIcon" src="icons/link.png" alt="" /></a>
       }
       else {
-        return  <a href={url}><img id="githubIcon" src="icons/GitHub.png" alt="" /></a>
+        return  <a href={url}><img id="githubIcon" src="icons/GitHub-black.png" alt="" /></a>
       }
     }
   }

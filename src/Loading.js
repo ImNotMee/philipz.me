@@ -5,9 +5,7 @@ import {Link} from 'react-router-dom';
 class Loading extends Component {
   render() {
     return (
-      <div className="loading">
         <div className="container">
-
           <div className="center">
           <div id="icon">Philip <span id="icon-2">Zhang</span></div>
             <div className="links">
@@ -24,7 +22,6 @@ class Loading extends Component {
           </div>
 
         </div>
-      </div>
     );
   }
 }
