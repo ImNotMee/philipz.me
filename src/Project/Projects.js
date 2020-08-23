@@ -36,7 +36,7 @@ class Projects extends Component {
        <h1 id="project-h1">Academic Projects:</h1>
        <hr id="line"></hr>
        <Projectbox
-         title="ChonroJS"
+         title="ChronoJS"
          pic="icons/javascript.png"
          text={"A customizable calendar front end library built using vanilla Javascript."}
          url="https://chronojs.herokuapp.com/index.html"
