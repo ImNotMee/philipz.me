@@ -1,15 +1,15 @@
 import React, { Component} from 'react';
-import './../projects.css';
+import '../Project/projects.css';
 
 class Projectbox extends Component {
 
   githubIcon(url) {
     if (this.props.url.length !== 0) {
-      if (this.props.title.includes("Website")) {
-        return <a href={url}><img id="githubIcon" src="icons/link.png" alt="" /></a>
+      if (this.props.url.includes("github.com")) {
+        return <a href={url}><img id="githubIcon" src="icons/GitHub-black.png" alt="" /></a>
       }
       else {
-        return  <a href={url}><img id="githubIcon" src="icons/GitHub-black.png" alt="" /></a>
+        return  <a href={url}><img id="githubIcon" src="icons/link.png" alt="" /></a>
       }
     }
   }
@@ -26,7 +26,9 @@ class Projectbox extends Component {
               {title}
               {this.githubIcon(url)}
             </h2>
-            <p id="project-p">{text}</p>
+            <p id="project-p">
+            {text}
+            </p>
           </div>
         </div>
     );

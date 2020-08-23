@@ -1,5 +1,5 @@
 #main-body {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -16,11 +16,11 @@
 .right-main {
   float: left;
   margin-top: 10%;
-  font-size: 115%;
+  font-size: 105%;
 }
 
 #me {
-  width: 40%;
+  width: 30%;
   border-radius: 25%;
 }
 
