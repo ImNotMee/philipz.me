@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './main.css';
-import NavBar from './components/NavBar.js';
 
 class Main extends Component {
   render() {
@@ -12,7 +11,7 @@ class Main extends Component {
                   <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"}></img>
                 </div>
                <div>
-                   <a href="https://www.linkedin.com/in/philip-zhang-3b7246127"><img id="icons" src="icons/linkedin.png" alt="" /></a>
+                   <a href="https://www.linkedin.com/in/philip-z/"><img id="icons" src="icons/linkedin.png" alt="" /></a>
                    <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
                    <a href="mailto:philip.zhang@mail.utoronto.ca"><img id="icons" src="icons/email.png" alt=""/></a>
                    <a href="https://www.instagram.com/_philzpng_/"><img id="icons" src="icons/instagram.png" alt="" /></a>

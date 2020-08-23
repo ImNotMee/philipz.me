@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import './projects.css';
-import Projectbox from './components/Projectbox.js';
+import Projectbox from '../components/Projectbox.js';
 
 class Projects extends Component {
   render() {
@@ -35,6 +35,18 @@ class Projects extends Component {
 
        <h1 id="project-h1">Academic Projects:</h1>
        <hr id="line"></hr>
+       <Projectbox
+         title="ChonroJS"
+         pic="icons/javascript.png"
+         text={"A customizable calendar front end library built using vanilla Javascript."}
+         url="https://chronojs.herokuapp.com/index.html"
+       />
+       <Projectbox
+         title="Health Tracker"
+         pic="icons/javascript.png"
+         text={"An application which allows users to keep track of their physical, medical and mental health data to improve their lifestyles. Also, has a COVID tracker of locations nearby which the user has been to. Built using React.js, NodeJS."}
+         url="https://csc309-2020-team27.herokuapp.com/"
+       />
         <Projectbox
           title="TEQ Reporting App"
           pic="icons/python.png"

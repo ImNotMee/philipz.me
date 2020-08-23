@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import './Portfolio.css';
-import Pictures from './components/Pictures.js';
-import Followers from './components/Follower.js';
+import Pictures from '../components/Pictures.js';
+import Followers from '../components/Follower.js';
 
 class Portfolio extends Component {
 
@@ -15,7 +15,7 @@ class Portfolio extends Component {
           </div>
           <div id="contacts" align= "center">
               <a href="https://www.instagram.com/_philzpng_/"><img id="icons" src="icons/instagram.png" alt="" /></a>
-              <a href="https://www.linkedin.com/in/philip-zhang-3b7246127"><img id="icons" src="icons/linkedin.png" alt="" /></a>
+              <a href="https://www.linkedin.com/in/philip-z/"><img id="icons" src="icons/linkedin.png" alt="" /></a>
               <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
           </div>
           <Followers />
