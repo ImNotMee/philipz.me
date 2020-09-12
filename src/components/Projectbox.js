@@ -3,19 +3,17 @@ import '../Project/projects.css';
 
 class Projectbox extends Component {
 
-  githubIcon(url) {
-    if (this.props.url.length !== 0) {
-      if (this.props.url.includes("github.com")) {
-        return <a href={url}><img id="githubIcon" src="icons/GitHub-black.png" alt="" /></a>
+  getIcons(type) {
+      if (type === "u" && this.props.url.length > 0) {
+        return <a href={this.props.url}><img id="githubIcon" src="icons/GitHub-black.png" alt="" /></a>
       }
-      else {
-        return  <a href={url}><img id="githubIcon" src="icons/link.png" alt="" /></a>
+      else if (type === "l" && this.props.link.length > 0) {
+        return  <a href={this.props.link}><img id="githubIcon" src="icons/link.png" alt="" /></a>
       }
-    }
   }
 
   render() {
-    const { title, text, pic, url} = this.props;
+    const { title, text, pic, link, url} = this.props;
     return (
       <div className="flexcontainer">
           <div className="picture">
@@ -24,7 +22,8 @@ class Projectbox extends Component {
           <div className="text">
             <h2 id="project-h2">
               {title}
-              {this.githubIcon(url)}
+              {this.getIcons("u")}
+              {this.getIcons("l")}
             </h2>
             <p id="project-p">
             {text}
