@@ -33,7 +33,7 @@ class Projects extends Component {
           title="Old Personal Website"
           pic="icons/html.png"
           text={"This project was built using vanilla JS, HTML and CSS. It was my first time interacting with these stacks. Mainly for me to get fimilar with HTML, CSS and JS."}
-          url=""
+          url="https://github.com/ImNotMee/ImNotMee.github.io"
           link="http://ImNotMee.github.io"
         />
 
