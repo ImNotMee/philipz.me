@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import './main.css';
 
 class Main extends Component {
@@ -8,7 +7,7 @@ class Main extends Component {
       <div id="main-body">
              <div className="left-main">
                 <div>
-                  <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"}></img>
+                  <img id="me" src={process.env.PUBLIC_URL + "icons/picofme.jpg"} alt=""></img>
                 </div>
                <div>
                    <a href="https://www.linkedin.com/in/philip-z/"><img id="icons" src="icons/linkedin.png" alt="" /></a>
@@ -17,7 +16,6 @@ class Main extends Component {
                    <a href="https://www.instagram.com/_philzpng_/"><img id="icons" src="icons/instagram.png" alt="" /></a>
                </div>
              </div>
-
              <div className="right-main">
                      <h3 id="main-h3">About me:</h3>
                      <p id="main-p" id="main-p">I am a 4th year Computer Science student @ University of Toronto.</p>
