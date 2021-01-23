@@ -13,7 +13,7 @@ class Projectbox extends Component {
   }
 
   render() {
-    const { title, text, pic, link, url} = this.props;
+    const { title, text, pic } = this.props;
     return (
       <div className="flexcontainer">
           <div className="picture">

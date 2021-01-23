@@ -7,7 +7,7 @@ class Loading extends Component {
     return (
         <div className="container">
           <div className="center">
-          <div id="icon">Philip <span id="icon-2">Zhang</span></div>
+            <div id="icon">Philip <span id="icon-2">Zhang</span></div>
             <div className="links">
               <Link to='/Photography'id="la">
                     <button type="button" className="button-style"><span>Photography</span></button>
@@ -20,7 +20,6 @@ class Loading extends Component {
               </Link>
             </div>
           </div>
-
         </div>
     );
   }
