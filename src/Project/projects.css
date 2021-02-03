@@ -1,6 +1,5 @@
 .projects {
   display: block;
-  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -30,7 +29,6 @@
 #display {
   width: 100%;
   height: auto;
-  margin: 5%;
   border-radius: 25%;
 }
 

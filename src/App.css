@@ -1,56 +1,30 @@
 html {
-  height: 100%;
   background-color: #121212;
 }
+
 h1, h2, h3 {
   color: #ffffff;
 }
 
+/*Buttons styling*/
 .button-style {
   border-radius: 12%;
-  padding: 1vh 3vh;
+  width: 100px;
+  height:5vh;
+  text-align:center;
   color: #ffffff;
   border: none;
   background-color: #388cd6;
 }
 
-.button-style span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.navbuttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
 }
 
-.button-style span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -1vh;
-  transition: 0.5s;
-}
-
-.button-style:hover span {
-  padding-right: 2vh;
-}
-
-.button-style:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/* Themes */
-#light-red {
-  color: #de3333;
-}
-
-#red {
-  color: #ff2626;
-}
-
-#dark-red {
-  color: #9e1818;
-}
-
-#tes {
+.pad{
+  padding-bottom: 3vh;
+  text-align: center;
 }

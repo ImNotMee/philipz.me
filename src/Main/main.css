@@ -1,21 +1,12 @@
 #main-body {
-  width: 90%;
-  margin-left: auto;
+  margin-left: 10%;
   margin-right: auto;
   color: #ffffff;
+  text-align: left;
 }
 
-.left-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.main {
   float: left;
-  margin-top: 15%;
-}
-
-.right-main {
-  float: left;
-  margin-top: 10%;
   font-size: 105%;
 }
 
@@ -25,14 +16,13 @@
 }
 
 #main-h3 {
-  color: #2a659c;
+  color:  #388cd6;
 }
 
 #t {
   display: flex;
-  flex-wrap: wrap;
 }
 
-#box2 {
-  padding-left: 1%;
+#box {
+  padding-left: 5%;
 }
