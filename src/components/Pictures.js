@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import * as a from "../backend/scraper.js";
+//import * as a from "../backend/scraper.js";
 const NUM_PAGE = 10;
-const buttonStyle = {
-  margin: 15,
-};
+// const buttonStyle = {
+//   margin: 15,
+// };
 
 class Pictures extends Component {
   constructor() {
@@ -11,13 +11,13 @@ class Pictures extends Component {
     this.state = { pictures: [], count: NUM_PAGE , prev: 0};
   }
 
-  componentDidMount() {
-    a.pictures().then(res => {
-      this.setState({
-          pictures: res
-        })
-    });
-  }
+  // componentDidMount() {
+  //   a.pictures().then(res => {
+  //     this.setState({
+  //         pictures: res
+  //       })
+  //   });
+  // }
 
   increase() {
     if (this.state.count < this.state.pictures.length) {
@@ -43,19 +43,24 @@ class Pictures extends Component {
     }
   }
 
+  // render() {
+  //   const a = this.state.pictures.slice(this.state.prev,this.state.count);
+  //   return (
+  //     <div className="right">
+  //       {a.map(d =>
+  //         <div>
+  //           <img id="pics" src={d.display_url} alt=""></img>
+  //           <p id="tee"><span id="colour"></span> {d.text}</p>
+  //       </div>)}
+  //       <button className="button-style" style={buttonStyle} onClick={this.decrease.bind(this)}>Prev</button>
+  //       <button className="button-style" style={buttonStyle} onClick={this.increase.bind(this)}>Next</button>
+  //     </div>
+  //   )}
   render() {
-    const a = this.state.pictures.slice(this.state.prev,this.state.count);
-    return (
-      <div className="right">
-        {a.map(d =>
-          <div>
-            <img id="pics" src={d.display_url} alt=""></img>
-            <p id="tee"><span id="colour"></span> {d.text}</p>
-        </div>)}
-        <button className="button-style" style={buttonStyle} onClick={this.decrease.bind(this)}>Prev</button>
-        <button className="button-style" style={buttonStyle} onClick={this.increase.bind(this)}>Next</button>
-      </div>
-    )}
+    return(
+      <h1>API deprecated, working on a new version.</h1>
+    );
+  }
 }
 
 export default Pictures;

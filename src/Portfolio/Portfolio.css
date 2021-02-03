@@ -1,11 +1,12 @@
 .Portfolio {
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .left {
-    margin-top: 10%;
-    margin-left: 7%;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
     position: fixed;
     float: left;
     width: 25%;
@@ -14,6 +15,7 @@
 .right {
     float: right;
     margin-right: 10%;
+    margin-top: 5%;
     width: 55%;
 
 }
@@ -33,11 +35,6 @@
     margin-right: auto;
     max-width: 75%;
     border-radius: 50%;
-}
-
-.top {
-    width: 100%;
-    height: 30px;
 }
 
 #list {
