@@ -7,8 +7,7 @@ import Pictures from '../components/Pictures.js';
 class Portfolio extends Component {
  
   state = {
-    page: "photo",
-    c: <Main />
+    page: <Main />
   }
 
   updatePage(e) {
@@ -27,8 +26,7 @@ class Portfolio extends Component {
         temp = <Main />
     }
     this.setState({
-      page: e.target.value,
-      c: temp
+      page: temp
     }); 
   }
 
@@ -62,7 +60,7 @@ class Portfolio extends Component {
           </div>
       </div>
       <div className="right">
-        {this.state.c}
+        {this.state.page}
       </div>
       </div>
     );
