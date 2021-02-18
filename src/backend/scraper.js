@@ -22,6 +22,7 @@ async function getPictures() {
         let t = cleanText(element.node.edge_media_to_caption.edges[0].node.text);
         pictures.push({ timestamp: element.node.taken_at_timestamp, display_url: element.node.display_url, likes: element.node.edge_liked_by.count, text:t });
     });
+    console.log(pictures);
     return pictures;
 }
 
@@ -50,3 +51,4 @@ export function pictures() {
 export function followers() {
  return getFollowers();
 }
+
