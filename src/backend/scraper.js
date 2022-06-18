@@ -40,7 +40,7 @@ function cleanText(text) {
   // Striping the ' or ,
   let t = text.replace(/'/g,"").replace(/,/g,'');
   // striping the new lines and hashtags
-  t = t.replace(/\n/g,"").replace(/\#\w\w+\s?/g, "");
+  t = t.replace(/\n/g,"").replace(/\w\w+\s?/g, "");
   return t;
 }
 

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import * as a from "../backend/scraper.js";
 const NUM_PAGE = 10;
-const buttonStyle = {
+const BUTTONSTYLE = {
   margin: 15,
 };
 
 class Pictures extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { pictures: [], count: NUM_PAGE , prev: 0};
   }
 
@@ -44,23 +44,18 @@ class Pictures extends Component {
   }
 
   render() {
-    const a = this.state.pictures.slice(this.state.prev,this.state.count);
+    const display = this.state.pictures.slice(this.state.prev,this.state.count);
     return (
       <div className="right">
-        {a.map(d =>
+        {display.map(d =>
           <div>
             <img id="pics" src={d.display_url} alt=""></img>
             <p id="tee"><span id="colour"></span> {d.text}</p>
         </div>)}
-        <button className="button-style" style={buttonStyle} onClick={this.decrease.bind(this)}>Prev</button>
-        <button className="button-style" style={buttonStyle} onClick={this.increase.bind(this)}>Next</button>
+        <button className="button-style" style={BUTTONSTYLE} onClick={this.decrease.bind(this)}>Prev</button>
+        <button className="button-style" style={BUTTONSTYLE} onClick={this.increase.bind(this)}>Next</button>
       </div>
     )}
-  // render() {
-  //   return(
-  //     <h1>API deprecated, working on a new version.</h1>
-  //   );
-  // }
 }
 
 export default Pictures;

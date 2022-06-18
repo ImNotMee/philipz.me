@@ -4,15 +4,17 @@
   "homepage": "https://philipz.me",
   "private": true,
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
     "bootstrap": "^4.6.0",
-    "cheerio": "^1.0.0-rc.5",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^2.1.8",
     "react-sweet-progress": "^1.1.2"
+  },
+  "devDependencies": {
+    "cheerio": "=1.0.0-rc.10"
   },
   "scripts": {
     "start": "react-scripts start",
