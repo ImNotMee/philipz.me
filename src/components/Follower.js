@@ -7,7 +7,6 @@ class Follower extends Component {
     this.state = { followerCount : 0};
   }
 
-
   componentDidMount () {
     a.followers().then(res => {
       this.setState({

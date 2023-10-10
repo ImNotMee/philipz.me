@@ -3,14 +3,19 @@ import './Portfolio.css';
 import Projects from '../Project/Projects.js';
 import Main from '../Main/Main.js'
 import Pictures from '../components/Pictures.js';
+import Follower from '../components/Follower';
 
 class Portfolio extends Component {
  
-  state = {
-    page: <Main />
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: <Main />
+    }
+    this.updatePage = this.updatePage.bind(this);
   }
-
-  updatePage(e) {
+  
+   updatePage(e) {
     let temp = "";
     switch(e.target.value) {
       case "photo":
@@ -33,9 +38,9 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="Portfolio">
-      <div className="left">
+        <div className="left">
           <div id="logo">
-              <img id="logo" src="icons/logo.jpg" alt="" />
+              <img id="logo" src="icons/picofme.jpg" alt="" />
           </div>
           <div id="contacts" align= "center">
               <a href="https://www.instagram.com/_philzpng_/"><img id="icons" src="icons/instagram.png" alt="" /></a>
@@ -43,20 +48,19 @@ class Portfolio extends Component {
               <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt=""/></a>
           </div>
           <div id="copyright">
-              <p align="center" id="bio">A UofT Student</p>
-              <p align="center"><span id="colour">Philip</span> @ 2021</p>
+              <p align="center" id="bio">An UofT Alumni</p>
+              <p align="center"><span id="colour">Philip</span> @ 2023</p>
           </div>
           <div className="navbuttons">
             <div className="pad">
-              <button className="button-style" onClick={this.updatePage.bind(this)} value="me">About Me</button>
+              <button className="button-style" value="me" onClick={this.updatePage}>About Me</button>
             </div>
             <div className="pad">
-              <button className="button-style" onClick={this.updatePage.bind(this)} value="photo">Photography</button>
+              <button className="button-style" value="projects" onClick={this.updatePage}>Projects</button>
             </div>
             <div className="pad">
-              <button className="button-style" onClick={this.updatePage.bind(this)} value="projects">Projects</button>
+              <button className="button-style" value="contact" onClick={() => window.location ='mailto:philip.zhang@mail.utoronto.ca'}>Contact me</button>
             </div>
-  
           </div>
       </div>
       <div className="right">
