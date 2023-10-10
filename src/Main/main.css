@@ -9,7 +9,9 @@
   float: left;
   font-size: 105%;
 }
-
+#main-p {
+  margin-left: 3%;
+}
 #me {
   width: 30%;
   border-radius: 25%;
