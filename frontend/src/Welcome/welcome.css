@@ -1,0 +1,65 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: inherit; /* Parent background color */
+    color: white; /* Text color */
+    animation: fadeInBackground 1.5s ease-in-out; /* Background animation */
+    text-align: center; /* Proper text alignment */
+  }
+  
+  .welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: textFadeIn 2s ease-in-out; /* Smooth fade-in for text */
+    margin-bottom: 20px; /* Space below the text */
+  }
+  
+  .continue-button {
+    background-color: #9c9c9c; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and icon */
+    animation: textFadeIn 2.5s ease-in-out; /* Smooth fade-in for button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .continue-button:hover {
+    background-color: #1c86ee; /* Slightly darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .arrow-icon {
+    font-size: 1.5rem; /* Arrow size */
+  }
+  
+  /* Keyframes for text and button fade effect */
+  @keyframes fadeInBackground {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

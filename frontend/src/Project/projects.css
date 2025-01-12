@@ -1,0 +1,51 @@
+.project-box {
+  display: flex;
+  align-items: center;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.project-display {
+  max-width: 100px;
+  border-radius: 10%;
+}
+
+.project-details {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #2a659c;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
