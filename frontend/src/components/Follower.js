@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as a from "../backend/scraper.js";
+//import * as a from "../backend/scraper.js";
 
 class Follower extends Component {
   constructor() {
@@ -7,13 +7,13 @@ class Follower extends Component {
     this.state = { followerCount : 0};
   }
 
-  componentDidMount () {
+  /**componentDidMount () {
     a.followers().then(res => {
       this.setState({
           followerCount: res
         })
     });
-  }
+  }**/
 
   render() {
     return (
