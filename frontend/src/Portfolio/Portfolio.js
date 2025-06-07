@@ -4,6 +4,7 @@ import Projects from '../Project/Projects.js';
 import Main from '../Main/Main.js';
 import Pictures from '../components/Pictures.js';
 import Welcome from '../Welcome/welcome.js';
+import { profileInfo } from "../constants/const";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -51,8 +52,10 @@ class Portfolio extends Component {
             <a href="https://github.com/ImNotMee"><img id="icons" src="icons/GitHub.png" alt="GitHub" /></a>
           </div>
           <div id="copyright">
-            <p align="center" id="bio">An UofT Alumni</p>
-            <p align="center"><span id="colour">Philip</span> @ 2025</p>
+            <p align="center" id="bio">{profileInfo.alumniTag}</p>
+            <p align="center">
+              <span id="colour">{profileInfo.name}</span> @ {profileInfo.copyrightYear}
+            </p>
           </div>
 
           {page.type !== Welcome && (
