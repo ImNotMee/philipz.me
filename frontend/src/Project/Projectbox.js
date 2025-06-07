@@ -11,12 +11,10 @@ const Projectbox = ({ title, text, pic, url, link }) => {
 
   return (
     <div className="project-box">
-      <div className="project-image">
-        <img className="project-display" src={pic} alt={`${title} icon`} />
-      </div>
       <div className="project-details">
         <h2 className="project-title">
           {title}
+          <img className="icon project-icon" src={pic} alt={`${title} icon`} />
           {renderIcon(url, "icons/GitHub-black.png", "GitHub link")}
           {renderIcon(link, "icons/link.png", "Live link")}
         </h2>

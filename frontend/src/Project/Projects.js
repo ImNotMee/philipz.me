@@ -17,18 +17,28 @@ const Projects = () => {
     ));
 
   return (
-    <div className="projects-container">
-      <section>
-        <h1 className="projects-header">Personal Projects</h1>
-        <hr className="divider" />
-        {renderProjects(personalProjects)}
-      </section>
+    <div className="projects-body">
+      <div className="projects-content">
+        <section className="projects-section">
+          <h3 className="section-header">
+            <i className="fas fa-code-branch"></i>
+            Personal Projects
+          </h3>
+          <div className="projects-grid">
+            {renderProjects(personalProjects)}
+          </div>
+        </section>
 
-      <section>
-        <h1 className="projects-header">Academic Projects</h1>
-        <hr className="divider" />
-        {renderProjects(academicProjects)}
-      </section>
+        <section className="projects-section">
+          <h3 className="section-header">
+            <i className="fas fa-graduation-cap"></i>
+            Academic Projects
+          </h3>
+          <div className="projects-grid">
+            {renderProjects(academicProjects)}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

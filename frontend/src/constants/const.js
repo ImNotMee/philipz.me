@@ -1,39 +1,98 @@
 // About Me Consts
 export const workExperiences = [
-    { title: "Full Stack Engineer", company: "Paymentus", duration: "Oct 2024 - Present" },
-    { title: "Consultant, Application Development", company: "CIBC Capital Markets", duration: "Mar - Sept 2024" },
-    { title: "Software Engineer II", company: "UKG", duration: "Jan - Aug 2023" },
-    { title: "Software Engineer", company: "UKG", duration: "Aug 2021 - Dec 2022" },
-    { title: "Software Developer Intern", company: "UKG", duration: "May 2021 - Aug 2021" },
-    { title: "DevOps Engineer Intern", company: "Oracle", duration: "May 2019 - May 2020" },
-    { title: "Technical Analyst Intern", company: "Toyota Canada Inc", duration: "Jan 2018 - Apr 2018" },
-  ];
+    {
+        company: "Paymentus",
+        title: "Full Stack Engineer",
+        duration: "Oct 2024 - Present",
+        description: "ngineered custom solutions on a large-scale payment platform, contributing to new feature development and system improvements across multiple projects.",
+        technologies: ["Java", "JavaScript", "Node.js", "ReactJS", "Apache FreeMarker", "HTML & CSS", "Kubernetes", "Tomcat"]
+    },
+    {
+        company: "CIBC Capital Markets",
+        title: "Consultant, Application Development",
+        duration: "Mar - Sept 2024",
+        description: "Supported and maintained infrastructure, delivering reliable messaging platforms for multiple projects within the Capital Markets Engineering.",
+        technologies: ["Java", "Openshift", "Helm Charts", "Kubernetes", "Microsoft Azure", "Git", "Solace"]
+    },
+    {
+        company: "UKG",
+        title: "Software Engineer II",
+        duration: "Jan - Aug 2023",
+        description: "Improved scalability and reliability of microservices architecture to support high-throughput message delivery across multiple notification channels.",
+        technologies: ["Java", "Spring Boot", "Kafka", "RabbitMQ", "Docker", "Git", "AWS SES,SQS & SNS", "OAuth", "REST API", "AWS S3"]
+    },
+    {
+        company: "UKG",
+        title: "Software Engineer I",
+        duration: "May 2021 - Dec 2022",  
+        description: "Developed and maintained backend systems, driving enhancements and ensuring stability for enterprise-scale notification services.",
+        technologies: ["Java", "Spring Boot", "Kafka", "RabbitMQ", "Docker", "Git", "AWS SES,SQS & SNS", "OAuth", "REST API", "AWS S3", "OpenAPI"]
+    },
+    {
+        company: "Oracle",
+        title: "DevOps Engineer Intern",
+        duration: "May 2019 - May 2020",
+        description: "Managed and optimized CI/CD pipelines for Oracle Eloqua, enabling seamless and consistent deployment processes.",
+        technologies: ["Python", "TypeScript", "Ruby","Docker", "Kubernetes", "Oracle Cloud", "Jenkins", "Teamcity", "Sensu", "Linux", "Windows Hyper-V", "Terraform"]
+    },
+    {
+        company: "Toyota Canada Inc",
+        title: "Technical Analyst Intern",
+        duration: "Jan 2018 - Apr 2018",
+        description: "Provided advanced IT support, managing device setup, hardware and asset tracking, and troubleshooting technical issues for internal users.",
+        technologies: ["SQL", "Cisco VoIP", "Imaging", "Excel","Active Directory"]
+    }
+];
+
+export const companiesUrl = {
+    "Paymentus": "https://www.paymentus.com/",
+    "CIBC Capital Markets": "https://cibccm.com/en/",
+    "UKG": "https://www.ukg.com/",
+    "Oracle": "https://www.oracle.com/ca-en/",
+    "Toyota Canada Inc": "https://www.toyota.ca/toyota/en/"
+};
 
 export const programmingLanguages = [
-    "Java", "Python", "HTML & CSS", "JavaScript", "SQL", "TypeScript", "C", "Bash",
-  ];
+    { name: "Java", proficiency: 80 },
+    { name: "Python", proficiency: 75 },
+    { name: "TypeScript", proficiency: 20 },
+    { name: "HTML & CSS", proficiency: 75 },
+    { name: "JavaScript", proficiency: 50 },
+    { name: "SQL", proficiency: 70 },
+    { name: ".Net", proficiency: 20 }
+];
 
 export const frameworksLibraries = [
-    "Spring Boot", "Node.js", "React.js", "AngularJS", "Pandas",
-  ];
+    { name: "React", proficiency: 50 },
+    { name: "Node.js", proficiency: 60 },
+    { name: "Express", proficiency: 40 },
+    { name: "Spring Boot", proficiency: 80 },
+    { name: "AngularJS", proficiency: 10 }
+];
 
 export const toolsTechnologies = [
-    "Git", "MySQL & SQLite", "REST API", "TeamCity", "Bitbucket",
-    "Chef", "Sensu", "Docker", "Kubernetes", "Kafka", "RabbitMQ", "MongoDB",
-  ];
+    { name: "Git", proficiency: 90 },
+    { name: "Docker", proficiency: 70 },
+    { name: "AWS", proficiency: 65 },
+    { name: "MongoDB", proficiency:60 },
+    { name: "REST API", proficiency: 70 },
+    { name: "Kafka", proficiency: 60 },
+    { name: "RabbitMQ", proficiency: 50 },
+    { name: "MySQL", proficiency: 60 },
+    { name: "OracleDB", proficiency: 40 },
+    { name: "Kubernetes", proficiency: 50 },
+    { name: "AWS SES, SQS, SNS", proficiency: 50 },
+    { name: "AWS S3", proficiency: 60 }
+];
 
-  export const aboutMeText = `
-  University of Toronto Computer Science Alumni with 2.5 years of professional backend-focused 
-  experience in Java Spring Boot and 1.5 years of DevOps experience. Also experienced in Python 
-  and JavaScript with various libraries and frameworks.
-`;
+export const aboutMeText = "Hey, I’m a University of Toronto Computer Science grad with a passion for backend development and DevOps. Over the past few years, I’ve enjoyed working on systems that are fast, reliable, and easy to scale — and I’m always exploring new technologies to bring into my work.";
 
 export const sectionHeaders = {
-  aboutMe: "About Me:",
-  workExperiences: "Work Experiences:",
-  programmingLanguages: "Programming Languages:",
-  frameworksLibraries: "Frameworks & Libraries:",
-  toolsTechnologies: "Tools & Other Technologies:",
+    aboutMe: "About Me",
+    workExperiences: "Work Experience",
+    programmingLanguages: "Programming Languages",
+    frameworksLibraries: "Frameworks & Libraries",
+    toolsTechnologies: "Tools & Technologies"
 };
 
 // Project Consts
@@ -48,7 +107,7 @@ export const personalProjects = [
     {
       title: "SenpaiBot (Discord Server Bot)",
       pic: "icons/python.png",
-      text: "A Python-based bot using Discord API, designed for our team’s Discord server with gaming-friendly features.",
+      text: "A Python-based bot using Discord API, designed for our team's Discord server with gaming-friendly features.",
       url: "https://github.com/SnoopySnipe/SenpaiBot",
       link: "",
     },
@@ -110,7 +169,7 @@ export const personalProjects = [
   export const profileInfo = {
     name: "Philip",
     alumniTag: "An UofT Alumni",
-    copyrightYear: "2024",
+    copyrightYear: "2025",
   };
   
   export const NAV_BUTTONS = [
@@ -148,4 +207,3 @@ export const personalProjects = [
       icon: 'icons/GitHub.png',
     },
   ];
-  

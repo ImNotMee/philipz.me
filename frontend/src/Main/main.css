@@ -1,56 +1,502 @@
+/* General Styles */
 .main-body {
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 900px;
-  color: #ffffff;
-  text-align: left;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #333;
 }
 
-.main-content {
+.section-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-header i {
+  color: #3498db;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 1rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
   font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #3498db;
+}
+
+/* Work Experience Section */
+.experience-section {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #3498db;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #3498db;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.company-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  color: #666;
+}
+
+.company-link {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-link:hover {
+  color: #3498db;
+}
+
+.job-title {
+  font-size: 1.7rem;
+  color: #3498db;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.duration {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background: #e1f0fa;
+  color: #3498db;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.achievements-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.achievements-list li {
+  margin-bottom: 0.5rem;
   line-height: 1.6;
 }
 
-.main-header {
-  color: #388cd6;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.tech-tag {
+  padding: 0.15rem 0.5rem;
+  background: #f0f0f0;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Projects Section */
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-title {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
-.main-text {
-  margin: 5px 0 15px 15px;
-  font-size: 1rem;
+.project-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #666;
 }
 
-.highlight {
-  color: #388cd6;
-  font-weight: bold;
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #2980b9;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-bottom: 4rem;
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .skills-box {
-  flex: 1;
-  margin: 10px;
-  min-width: 200px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.skills-list {
-  list-style-type: none;
-  padding: 0;
+.skills-header {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.skills-list li {
-  margin: 5px 0;
-  font-size: 1rem;
+.skills-header i {
+  color: #3498db;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.skill-level {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: #3498db;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 1rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  padding: 1rem 2rem;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-item,
+.project-card,
+.skills-box {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .main-body {
+    color: #f5f5f5;
+  }
+
+  .section-header {
+    color: #f5f5f5;
+  }
+
+  .hero-section,
+  .contact-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  }
+
+  .hero-title {
+    color: #f5f5f5;
+  }
+
+  .hero-description {
+    color: #ddd;
+  }
+
+  .social-link {
+    color: #f5f5f5;
+  }
+
+  .timeline-content,
+  .project-card,
+  .skills-box {
+    background: #2c3e50;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  .company-link,
+  .project-title,
+  .skills-header,
+  .skill-name {
+    color: #f5f5f5;
+  }
+
+  .job-description,
+  .project-description,
+  .contact-text {
+    color: #ddd;
+  }
+
+  .tech-tag {
+    background: #34495e;
+    color: #f5f5f5;
+  }
+
+  .skill-level {
+    background: #34495e;
+  }
 }
