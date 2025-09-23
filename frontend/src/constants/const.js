@@ -207,3 +207,14 @@ export const personalProjects = [
       icon: 'icons/GitHub.png',
     },
   ];
+
+// Error Page Constants
+export const errorPageContent = {
+  errorCode: "404",
+  title: "Page Not Found",
+  message: "Well, this is awkward… the page you're looking for doesn't exist...",
+  suggestion: "Let's teleport you back!",
+  homeButtonText: "Go Back Home",
+  backButtonText: "Go Back",
+  helpfulLinksText: "Or try one of these popular pages:"
+};

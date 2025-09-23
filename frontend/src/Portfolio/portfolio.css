@@ -9,10 +9,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%;
+  width: 18%;
   height: 100%;
   background-color: #333333; /* Dark gray for the sidebar */
-  padding: 0; /* Removed padding around the .left container */
+  padding: 1rem; /* Added padding to prevent overflow */
   text-align: center;
   box-sizing: border-box;
   display: flex;
@@ -20,6 +20,7 @@
   justify-content: center; /* Center all elements vertically */
   align-items: center; /* Center all elements horizontally */
   gap: 10px; /* Minimal space between child elements */
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .right {
@@ -38,18 +39,27 @@
 }
 
 #contacts {
-  margin: 10px 0; /* Reduced margin for consistent spacing */
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 #icons {
-  max-width: 35px;
-  max-height: 35px;
-  margin: 0 5px; /* Reduced horizontal margin */
-  transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 8px;
+  background: rgba(52, 152, 219, 0.1);
+  flex-shrink: 0;
 }
 
 #icons:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  background: rgba(52, 152, 219, 0.3);
+  transform: translateY(-2px);
 }
 
 #bio {
@@ -66,41 +76,50 @@
   color: #bbb;
 }
 
-.nav-buttons {
-  margin-top: 15px; /* Reduced top margin */
+.navbuttons {
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.nav-buttons .pad {
-  margin-bottom: 10px; /* Reduced bottom margin */
+.navbuttons .pad {
+  margin-bottom: 1rem;
 }
 
 .button-style {
-  background-color: #3498db;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 0.95rem;
-  border-radius: 6px;
+  background: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 25px;
   cursor: pointer;
   width: 100%;
-  transition: all 0.2s ease;
-  font-weight: 500;
-  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .button-style:hover {
-  background-color: #2980b9;
-  transform: translateY(-1px);
+  background: #3498db;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
 }
 
 .button-style:active {
   transform: translateY(0);
-  background-color: #2472a4;
 }
 
 .button-style:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
 }
 
 .left, .right {
@@ -116,7 +135,8 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 0; /* Removed padding for smaller screens */
+    padding: 1rem;
+    gap: 0.5rem;
   }
 
   .right {
@@ -124,23 +144,38 @@
     margin-left: 0;
   }
 
-  #logo-img {
+  .left #logo-img {
     width: 50%;
-    margin-bottom: 5px; /* Reduced bottom margin */
+    margin-bottom: 0.5rem;
   }
 
-  #contacts {
+  .left #contacts {
+    margin: 0.75rem 0;
+    gap: 0.5rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px; /* Reduced bottom margin */
+    flex-wrap: wrap;
   }
 
-  .nav-buttons .pad {
+  .left #icons {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+
+  .left .navbuttons {
+    margin-top: 1rem;
     width: 100%;
   }
 
-  .button-style {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .left .navbuttons .pad {
+    margin-bottom: 0.75rem;
+  }
+
+  .left .button-style {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    width: 100%;
+    letter-spacing: 0.3px;
   }
 }
